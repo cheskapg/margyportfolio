@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Educational History</h2>
+          <h2 className="text-2xl font-semibold mb-4 ">Educational History</h2>
           <div className="mb-4">
             <h3 className="text-xl font-semibold">
               Bachelor of Science in Business Administration Major in Marketing
