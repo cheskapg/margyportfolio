@@ -117,9 +117,9 @@ const Home: NextPage = () => {
         <section className="bg-white shadow-lg rounded-lg p-6 mb-12">
           <h2 className="text-3xl font-semibold mb-4">Awards Received</h2>
           <ul className="list-disc list-inside">
-            <li>Most Outstanding Employee of the Year, Pixelpoint Hive (2015)</li>
+            {/* <li>Most Outstanding Employee of the Year, Pixelpoint Hive (2015)</li>
             <li>Best Mobile App Design, HGFZ Graduate Center (2014)</li>
-            <li>Design Awards, Cliffmoor College (2012)</li>
+            <li>Design Awards, Cliffmoor College (2012)</li> */}
           </ul>
         </section>
 
