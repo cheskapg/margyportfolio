@@ -1,113 +1,144 @@
+import type { NextPage } from "next";
 import Image from "next/image";
+import profilePic from "../public/profilepic.jpeg"; // Add your profile picture in the public directory
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      <header className="bg-blue-600 text-white py-6">
+        <div className="container mx-auto flex items-center justify-between">
+          <h1 className="text-3xl font-bold">Denise Margareth E. Catacutan</h1>
+        </div>
+      </header>
+
+      <main className="container mx-auto px-6 py-12">
+        <div className="flex items-center justify-center mb-12">
+          <Image
+            src={profilePic}
+            alt="Profile Picture"
+            className="rounded-full"
+            width={150}
+            height={150}
+          />
+        </div>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Personal Profile</h2>
+          <p>
+            Motivated and detail-oriented Marketing Management graduate with a
+            solid foundation in strategic planning, and promotional activities.
+            Known for strong multitasking abilities, adaptability, and
+            proficiency in Microsoft Office and internet applications. Eager to
+            leverage these skills in a dynamic environment to drive business
+            success and achieve personal and professional growth.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Educational History</h2>
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold">
+              Bachelor of Science in Business Administration Major in Marketing
+              Management
+            </h3>
+            <p>Holy Cross of Davao College, Inc. | 2024</p>
+            <p>
+              Gained a comprehensive understanding of marketing principles,
+              strategic planning, and consumer behavior, with hands-on
+              experience in market research and digital marketing strategies.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">
+              Senior High School - Major in Accountancy, Business, and
+              Management
+            </h3>
+            <p>Davao City National High School | 2020</p>
+            <p>
+              Gained foundational knowledge in accounting principles, business
+              operations, and management strategies, with a focus on financial
+              literacy, business ethics, and organizational behavior.
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
+          <div>
+            <h3 className="text-xl font-semibold">Intern</h3>
+            <p>EMCOR | Feb 2024 - May 2024</p>
+            <ul className="list-disc list-inside">
+              <li>
+                Conducted market research to identify consumer needs and
+                preferences, assisting in data-driven decision-making.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to coordinate and
+                execute promotional events and campaigns.
+              </li>
+              <li>
+                Contributed to the development and implementation of marketing
+                strategies, including social media and content marketing.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Skills Summary</h2>
+          <ul className="list-disc list-inside">
+            <li>Project Management</li>
+            <li>Budgeting and Cost Analysis</li>
+            <li>Enterprise Resource Planning</li>
+            <li>Software Development</li>
+            <li>Process Improvement</li>
+            <li>Staff and User Training</li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Awards Received</h2>
+          <ul className="list-disc list-inside">
+            <li>
+              Most Outstanding Employee of the Year, Pixelpoint Hive (2015)
+            </li>
+            <li>Best Mobile App Design, HGFZ Graduate Center (2014)</li>
+            <li>Design Awards, Cliffmoor College (2012)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
+          <p className="mb-2">Address: 754 Watusi St., Buhangin, Davao City</p>
+          <p className="mb-2">
+            Email:{" "}
+            <a
+              href="mailto:hello@reallygreatsite.com"
+              className="text-blue-600 hover:underline"
+            >
+              hello@reallygreatsite.com
+            </a>
+          </p>
+          <p className="mb-2">Phone: 0966-841-8751</p>
+          <p className="mb-2">
+            Website:{" "}
+            <a
+              href="http://www.reallygreatsite.com"
+              className="text-blue-600 hover:underline"
+            >
+              www.reallygreatsite.com
+            </a>
+          </p>
+        </section>
+      </main>
+
+      <div className="bg-gray-800 text-white py-4">
+        <div className="container mx-auto text-center">
+          <p>&copy; 2024 Denise Margareth E. Catacutan</p>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default Home;
